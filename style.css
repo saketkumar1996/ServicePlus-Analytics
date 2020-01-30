@@ -1,0 +1,28 @@
+.top-header {
+    background-color: #413C69;
+    color: white;
+}
+.card1,.card2,.card3{
+background-color: #e9b000;
+height: 200px;
+border-radius: 7px;
+
+}
+.button1,.button2,.button3{
+    padding-top: 0px;
+    margin-top: 20px;
+  
+    ;
+}
+.emblem{
+
+ 
+    height: 60px;
+}
+.bg_dash{
+    background-image: url(back.png);
+}
+.fa-map-marker-alt,.fa-university,.fa-cog,.fa-share-square,.fa-download{
+margin: 5px;
+padding: 3px;
+}
