@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ServicePlus | Government of India</title>
+    <link rel="icon" href="serviceplus-logo.png" type="image/gif" sizes="16x16">
     <!--Font-Awesome Lib-->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -27,12 +28,12 @@
 <!--top header-->
         <div class="container-fluid top-header">
         <div class="row">
-            <div class="col-7">
+            <div class="col-md-7">
                 <div class="fab fa-linkedin mt-1 pd-2"></div>
                 <div class="fab fa-twitter mt-1 pd-2"></div>
                 <div class="fab fa-facebook-square mt-1 pd-2"></div>
             </div>
-            <div class="col-5">
+            <div class="col-md-5 text-right">
                 <div><a><i class="fas fa-arrow-circle-down mt-1 pd-2"></i> Skip to main content</a>
                     <a> <i class="fas fa-volume-up mt-1 pd-2"></i> Screen Reader Access</a>
                     <a class="mt-1 pd-2">FAQs</a>
@@ -56,73 +57,74 @@
 <!--middle header-->
     <div class="container-fluid middle-header">
         <div class="row">
-            <div class="col-7">
+            <div class="col-md-7">
                 <img class="img-fluid logo" src="service_plus.png" alt="service_plus" height="1000" width="400">
             </div>
-            <div class="col-4 w-100 text-right">
-                <button type="button" class="btn btn-primary button1 "><i class="fas fa-sign-in-alt"></i>  Login </button>
+            <div class="col-md-4 w-100 text-right">
+                <button type="button" class="btn btn-primary button1 "><i class="fas fa-sign-in-alt"></i> Login  </button>
                 <button type="button" class="btn btn-primary button2 "><i class="fas fa-question-circle"></i> Help</button>
                 <button type="button" class="btn btn-primary button3 mr-5 "><i class="fas fa-tachometer-alt"></i> KPI</button>
 
             </div>
-            <div class="col-1  ">
+            <div class="col-md-1  ">
                 <img class="img-fluid emblem " src="emblem.png" alt="emblem">
             </div>
         </div>
     </div>
 <!--dashboard-->
-<div class="container-fluid bg_dash ">
+<div class="container-fluid bg_dash p-2">
     <div class="row ">
-        <div class="col-4">
+        <div class="col-md-4">
             <div class="container-fluid">
                 <div class="row">
                     <!--District level Summary-->
-                    <div class="col-12 card1 pd-2 mt-2 "><h4 class="text-center">District Level summary</h4><!--card for district level summary-->
+                    <div class="col-md-12 card1 p-2 "><h5 class="text-center">District Level Summary</h5><!--card for district level summary-->
                         <ul style="list-style-type: none;">
-                            <li><i class="fas fa-map-marker-alt"></i><span class="label label-default">5</span>State<span class="label label-default">5</span></li>
-                            <li><i class="fas fa-cog"></i>Services</li>
-                            <li><i class="fas fa-university"></i>Departments</li>
-                            <li><i class="fas fa-download"></i>App Recieved</li>
-                            <li><i class="fas fa-share-square"></i>App Delivered</li>
+                            <li class=""><i class="fas fa-map-marker-alt"></i>State<span class="badge badge-pill badge-secondary float-right mr-3">15</span></li>
+                            <li><i class="fas fa-cog"></i>Services<span class="badge badge-pill badge-secondary float-right mr-3">141</span></li>
+                            <li><i class="fas fa-university"></i>Departments<span class="badge badge-pill badge-secondary float-right mr-3">27</span></li>
+                            <li><i class="fas fa-download"></i>App Recieved<span class="badge badge-pill badge-secondary float-right mr-3">13669608</span></li>
+                            <li><i class="fas fa-share-square"></i>App Delivered<span class="badge badge-pill badge-secondary float-right mr-3">11188075</span></li>
                         </ul>
                     </div>
-                    <div class="col-12 map"><!--India Map-->
+                    <div class="col-md-12 map"><!--India Map-->
                       <!--India Map India Map-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 card2 pd-1 mt-2" >
-                        <h4 class="text-center ">State Level Summary</h4>
-                        <ul style="list-style-type: none;">
-                            <li><i class="fas fa-cog"></i>Services </li>
-                            <li><i class="fas fa-university"></i>Departments</li>
-                            <li><i class="fas fa-download"></i>App Recieved</li>
-                            <li><i class="fas fa-share-square"></i>App Delivered</li>
+                    <div class="col-md-12 card2 p-2" >
+                        <h5 class="text-center ">State Level Summary</h5>
+                        <div class="line"></div>
+                        <ul style="list-style-type: none;" class="pt-1">
+                            <li><i class="fas fa-cog"></i>Services<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">26</span></li>
+                            <li><i class="fas fa-university"></i>Departments<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">11</span></li>
+                            <li><i class="fas fa-download"></i>App Recieved<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">13281</span></li>
+                            <li><i class="fas fa-share-square"></i>App Delivered<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">7140</span></li>
                     </ul>    
                     </div>
-                    <div class="col-12 detail">
+                    <div class="col-md-12 detail">
                         <!-- detail of state level -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-4"><!--central-->
+        <div class="col-md-4"><!--central-->
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 card3 pd-1 mt-2" >
-                        <h4 class="text-center">Central Level Summary</h4>
-                        <ul  style="list-style-type: none;">
-                            <li><i class="fas fa-cog "></i>Services</li>
-                            <li><i class="fas fa-university "></i>Departments</li>
-                            <li><i class="fas fa-download "></i>App Recieved</li>
-                            <li><i class="fas fa-share-square "></i>App Delivered</li>
+                    <div class="col-md-12 card3 p-2" >
+                        <h5 class="text-center">Central Level Summary</h5>
+                        <ul  style="list-style-type: none;" class="pt-1">
+                            <li><i class="fas fa-cog"></i>Services<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">9</span></li>
+                            <li><i class="fas fa-university"></i>Departments<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">5</span></li>
+                            <li><i class="fas fa-download"></i>App Recieved<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">24343</span></li>
+                            <li><i class="fas fa-share-square"></i>App Delivered<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">3815</span></li>
                     </ul>    
                     </div>
-                    <div class="col-12 detail">
+                    <div class="col-md-12 detail">
                         <!--detail-->
                         
                     </div>
