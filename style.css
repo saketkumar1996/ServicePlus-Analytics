@@ -1,8 +1,35 @@
-.top-header {
+.top-header {                           
     background-color: #413C69;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
 }
+
+.top-header i {
+    cursor: pointer;
+    margin-right:5px;
+    
+}
+.sp_logo{
+    max-height: 45px;
+    /* max-width: 180px; */
+}
+
+.mobile_menu>ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top:25%;
+    padding-inline-start: 0;
+    overflow-x: hidden;
+}
+.btn_style {
+    margin-top:5px;
+    width:100%;
+}
+.cursor_pointer {
+    cursor: pointer;
+    margin-right:5px;
+}
+
 .card1,.card2,.card3{
 background-color: #e9b000;
 height: 200px;
@@ -14,11 +41,12 @@ margin-bottom: 5px;
 
 }
 .button1,.button2,.button3{
-    padding-top: 0px;
-    margin-top: 20px;
-  
-    ;
+    margin-left:5px;
+    margin-right:5px;
+    background-color: #413C69;
+    border: none;
 }
+
 .emblem{
 
  
@@ -36,3 +64,116 @@ padding: 3px;
     width: 100%;
     background-color: #707070;
 }
+/*logos*/
+.logos {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  
+  .logos img {
+    height: 60px;
+  }
+  
+  .logos .panchayati_raj_logo {
+    padding-left: 50px;
+  }
+  /*footer*/
+  .footer {
+    background-color: #413C69;
+    color: white;
+    padding: 10px;
+  }
+  
+  .footer .foot_link {
+    text-decoration: none;
+    color: black;
+    color: white;
+  }
+  
+  .footer .foot_link:hover {
+    color: black;
+  }
+  
+  .footer .quick_links .col-6 {
+    border-left: 5px solid rgba(0, 0, 0, 0);
+  }
+  
+  .footer .quick_links .col-6:hover {
+    border-left: 5px solid #59c0f0;
+  }
+  
+  .footer .quick_links .col-6 a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    margin-left: 0px;
+    display: block;
+  }
+  
+  .footer .content {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+  }
+  
+  .footer .last_update {
+    color: #cfcfcf;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  .footer .green_text {
+    color: #21971a;
+  }
+  /* mobile_menu */
+  .mobile_menu {
+      height: 110vh;
+      background-color:rgba(65, 60, 105, 0.856);
+      width:100%;
+      z-index:5;
+      position: absolute;
+      top:0px;
+      left:0px;
+  }
+  /* login_modal */
+  @media (min-width: 576px){
+    .modal-dialog {
+      max-width: 400px;
+      
+      .modal-content {
+        padding: 1rem;
+      }
+    }
+  }
+  
+  
+    .close {
+      margin-top: -1.5rem;
+    }
+  
+  
+  .form-title {
+    margin: -2rem 0rem 2rem;
+  }
+  
+  .btn-round {
+    border-radius: 3rem;
+  }
+  
+  .delimiter {
+    padding: 1rem;  
+  }
+  
+   .signup-section {
+    padding: 0.3rem 0rem;
+  } 

@@ -21,126 +21,378 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ 
     <link rel="stylesheet" href="style.css">
+    <script src="scripts/index.js"></script>
 </head>
 
 <body>
-<!--top header-->
-        <div class="container-fluid top-header">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="fab fa-linkedin mt-1 pd-2"></div>
-                <div class="fab fa-twitter mt-1 pd-2"></div>
-                <div class="fab fa-facebook-square mt-1 pd-2"></div>
-            </div>
-            <div class="col-md-5 text-right">
-                <div><a><i class="fas fa-arrow-circle-down mt-1 pd-2"></i> Skip to main content</a>
-                    <a> <i class="fas fa-volume-up mt-1 pd-2"></i> Screen Reader Access</a>
-                    <a class="mt-1 pd-2">FAQs</a>
-                    <a class="mt-1 pd-2">A+</a>
-                    <select name="language-picker-select mt-1 pd-2" id="language-picker-select">
-                        <option lang="hin" value="Hindi">Hindi</option>
-                        <option lang="en" value="english" selected>English</option>
-                    </select>
-
-
+    <!-- mobile menu -->
+    <div class="mobile_menu d-lg-none">
+        
+        <ul>
+            <li>
+                <div class="mobile_menu_close text-right mr-2">
+                    <i class="fas fa-times text-white"></i>
                 </div>
+            </li>
+            <li class="nav-item active ">
+                <button type="button" class="btn btn-primary button1 btn_style"><i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary button2 btn_style"><i class="fas fa-question-circle"></i>
+                    Help</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary button3 btn_style"><i class="fas fa-tachometer-alt"></i>
+                    KPI</button>
+            </li>
+        </ul>
+    </div>
+    <script>
+            $('.mobile_menu').hide();
+    </script>
+
+    <!--top header-->
+    <div class="container-fluid top-header">
+        <div class="row">
+            <div class="col-3">
+                <i class="fab fa-linkedin mt-1 pd-2"></i>
+                <i class="fab fa-twitter mt-1 pd-2"></i>
+                <i class="fab fa-facebook-square mt-1 pd-2"></i>
+            </div>
+            <div class="col-9 text-right">
+                <!-- <div><a><i class="fas fa-arrow-circle-down mt-1 pd-2"></i> Skip to main content</a> -->
+                <!-- <a> <i class="fas fa-volume-up mt-1 pd-2"></i> Screen Reader Access</a> -->
+                <a class="mt-1 pd-2 cursor_pointer">FAQs</a>
+                <a class="mt-1 pd-2 cursor_pointer">A+</a>
+                <select name="language-picker-select mt-1 pd-2" id="language-picker-select">
+                    <option lang="hin" value="Hindi">Hindi</option>
+                    <option lang="en" value="english" selected>English</option>
+                </select>
+
 
             </div>
-
-
 
         </div>
 
+
+
     </div>
-    
-<!--middle header-->
-    <div class="container-fluid middle-header">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> <img class="img-fluid sp_logo" src="service_plus.png" alt="service_plus">
+        </a>
+        <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mobile_menu_btn"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active ">
+                    <!-- <button type="button" class="btn btn-primary button1 "><i class="fas fa-sign-in-alt"></i> Login
+                    </button> -->
+                    <div class="container">
+  <button type="button" class="btn btn-primary button1" data-toggle="modal" data-target="#loginModal">
+    <i class="fas fa-sign-in-alt"></i>Login</button>  
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4>Login</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Your password...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+          </form>
+          
+          <div class="text-center text-muted delimiter">or use a social network</div>
+          <div class="d-flex justify-content-center social-buttons">
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </di>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+      </div>
+  </div>
+</div>
+
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary button2 "><i class="fas fa-question-circle"></i>
+                        Help</button>
+                </li>
+                <li class="nav-item">
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary button3" data-toggle="modal" data-target="#exampleModalCenter">
+    <i class="fas fa-tachometer-alt"></i>KPI
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title " id="exampleModalLongTitle">KPI(Key Performance Indicator)</h4>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <p class="">
+            KPI is a measurable value that demonstrates how effectively an organization is achieving key business objectives.
+             Organizations use KPIs at multiple levels to evaluate their success at reaching targets.
+        </p>
+        <p>
+            KPI are measured at service level. All the KPIs are independent and can be applied to all the services/departments and states to evaluate the success of an organization or of a particular activity in which it engages.
+
+        </p>
+        <ol class="font-weight-bold ">
+            <li>No of submissions channels supported for a service</li>
+            <li>Percentage of applications which are not 
+                processed(No action taken)  </li>
+            <li>Average number of times supplementary documents 
+                requested
+             </li>
+            <li>Percentage of applications Processed Within SLA</li>
+            <li>Percentage of applications Processed Beyond SLA</li>
+            <li>Percentage of applications delivered in 1-7 days  
+                post SLA
+            </li>
+            <li>Percentage of applications delivered in 8-14 days 
+                post SLA
+            </li>
+            <li>Percentage of applications delivered in 15-30 days  
+                post SLA
+            </li>
+            <li>Percentage of applications delivered in 30 days post 
+                SLA
+           </li>
+            <li>Percentage of applications delivered in greater      
+                than 31 days post SLA
+          </li>
+            <li>Average processing time vs SLA defined</li>
+            <li>Percentage of applications put on hold</li>
+            <li>Average hold time for processed applications</li>
+            <li> Percentage of total applications called back
+            </li>
+            <li>Average no. of times application called back</li>
+            <li>Percentage of total applications called back after 
+                delivery</li>
+            <li>Percentage of total applications called back 
+                before delivery</li>
+            <li>Percentage of applications Rejected</li>
+            <li>Percentage of applications revived after rejection</li>
+            <li>Average time for submission of application in the 
+                system - data entry operators</li>
+            <li>Average time for submission of application in the 
+                system - kiosk
+          </li>
+            <li>Applications received online</li>
+            <li>Payment received online</li>
+            <li>Percentage of applications with digital signature 
+                used for output certificate
+          </li>
+            <li>Application processed per employee per day</li>
+        </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                    <!-- <button type="button" class="btn btn-primary button3"><i class="fas fa-tachometer-alt"></i>
+                        KPI</button> -->
+                </li>
+            </ul>
+        </div>
+        <div class="emblem_div d-none d-lg-block">
+            <img class="img-fluid emblem " src="emblem.png" alt="emblem">
+        </div>
+    </nav>
+
+
+
+
+    <!--middle header-->
+    <!-- <div class="container-fluid middle-header">
         <div class="row">
             <div class="col-md-7">
                 <img class="img-fluid logo" src="service_plus.png" alt="service_plus" height="1000" width="400">
             </div>
             <div class="col-md-4 w-100 text-right">
-                <button type="button" class="btn btn-primary button1 "><i class="fas fa-sign-in-alt"></i> Login  </button>
-                <button type="button" class="btn btn-primary button2 "><i class="fas fa-question-circle"></i> Help</button>
-                <button type="button" class="btn btn-primary button3 mr-5 "><i class="fas fa-tachometer-alt"></i> KPI</button>
+                <button type="button" class="btn btn-primary button1 "><i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <button type="button" class="btn btn-primary button2 "><i class="fas fa-question-circle"></i>
+                    Help</button>
+                <button type="button" class="btn btn-primary button3 mr-5 "><i class="fas fa-tachometer-alt"></i>
+                    KPI</button>
 
             </div>
             <div class="col-md-1  ">
                 <img class="img-fluid emblem " src="emblem.png" alt="emblem">
             </div>
         </div>
-    </div>
-<!--dashboard-->
-<div class="container-fluid bg_dash p-2">
-    <div class="row ">
-        <div class="col-md-4">
-            <div class="container-fluid">
-                <div class="row">
-                    <!--District level Summary-->
-                    <div class="col-md-12 card1 p-2 "><h5 class="text-center">District Level Summary</h5><!--card for district level summary-->
-                        <div class="line"></div>
-                        <ul style="list-style-type: none;">
-                            <li class=""><i class="fas fa-map-marker-alt"></i>State<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">15</span></li>
-                            <li><i class="fas fa-cog"></i>Services<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">141</span></li>
-                            <li><i class="fas fa-university"></i>Departments<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">27</span></li>
-                            <li><i class="fas fa-download"></i>App Recieved<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">13669608</span></li>
-                            <li><i class="fas fa-share-square"></i>App Delivered<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">11188075</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12 map"><!--India Map-->
-                      <!--India Map India Map-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 card2 p-2" >
-                        <h5 class="text-center ">State Level Summary</h5>
-                        <div class="line"></div>
-                        <ul style="list-style-type: none;" class="pt-1">
-                            <li><i class="fas fa-cog"></i>Services<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">26</span></li>
-                            <li><i class="fas fa-university"></i>Departments<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">11</span></li>
-                            <li><i class="fas fa-download"></i>App Recieved<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">13281</span></li>
-                            <li><i class="fas fa-share-square"></i>App Delivered<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">7140</span></li>
-                    </ul>    
-                    </div>
-                    <div class="col-md-12 detail">
-                        <!-- detail of state level -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4"><!--central-->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 card3 p-2" >
-                        <h5 class="text-center">Central Level Summary</h5>
-                        <div class="line"></div>
-                        <ul  style="list-style-type: none;" class="pt-1">
-                            <li><i class="fas fa-cog"></i>Services<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">9</span></li>
-                            <li><i class="fas fa-university"></i>Departments<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">5</span></li>
-                            <li><i class="fas fa-download"></i>App Recieved<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">24343</span></li>
-                            <li><i class="fas fa-share-square"></i>App Delivered<span class="badge badge-pill badge-secondary float-right mr-3 mt-2">3815</span></li>
-                    </ul>    
-                    </div>
-                    <div class="col-md-12 detail">
-                        <!--detail-->
+    </div> -->
+    <!--dashboard-->
+    <div class="container-fluid bg_dash p-2">
+        <div class="row ">
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--District level Summary-->
+                        <div class="col-md-12 card1 p-2 ">
+                            <h5 class="text-center">District Level Summary</h5>
+                            <!--card for district level summary-->
+                            <div class="line"></div>
+                            <ul style="list-style-type: none;">
+                                <li class=""><i class="fas fa-map-marker-alt"></i>State<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">15</span></li>
+                                <li><i class="fas fa-cog"></i>Services<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">141</span></li>
+                                <li><i class="fas fa-university"></i>Departments<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">27</span></li>
+                                <li><i class="fas fa-download"></i>App Recieved<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">13669608</span>
+                                </li>
+                                <li><i class="fas fa-share-square"></i>App Delivered<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">11188075</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 map">
+                            <!--India Map-->
+                            <!--India Map India Map-->
                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 card2 p-2">
+                            <h5 class="text-center ">State Level Summary</h5>
+                            <div class="line"></div>
+                            <ul style="list-style-type: none;" class="pt-1">
+                                <li><i class="fas fa-cog"></i>Services<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">26</span></li>
+                                <li><i class="fas fa-university"></i>Departments<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">11</span></li>
+                                <li><i class="fas fa-download"></i>App Recieved<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">13281</span></li>
+                                <li><i class="fas fa-share-square"></i>App Delivered<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">7140</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 detail">
+                            <!-- detail of state level -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!--central-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 card3 p-2">
+                            <h5 class="text-center">Central Level Summary</h5>
+                            <div class="line"></div>
+                            <ul style="list-style-type: none;" class="pt-1">
+                                <li><i class="fas fa-cog"></i>Services<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">9</span></li>
+                                <li><i class="fas fa-university"></i>Departments<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">5</span></li>
+                                <li><i class="fas fa-download"></i>App Recieved<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">24343</span></li>
+                                <li><i class="fas fa-share-square"></i>App Delivered<span
+                                        class="badge badge-pill badge-secondary float-right mr-3 mt-2">3815</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 detail">
+                            <!--detail-->
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--footer--> 
-<footer>
-<div class="container">
+    <!-- logos -->
+    <div class="container-fluid logos">
+        <a target="_blank" href="https://www.nic.in/"><img class="img-fluid" src="images/panchayati-raj.png"
+                alt="panchayati raj"></a>
+        <a target="_blank" href="http://panchayatonline.gov.in/"><img class="img-fluid" src="images/pes.png"
+                alt="pes logo"></a>
+        <a target="_blank" href="http://india.gov.in/"><img class="img-fluid" src="images/india-gov-logo.png"
+                alt="india gov logo"></a>
+        <a target="_blank" href="http://www.meity.gov.in/"><img class="img-fluid" src="images/negp_logo.png"
+                alt="negp logo"></a>
+        <a target="_blank" href="http://www.digitalindia.gov.in/"><img class="img-fluid"
+                src="images/digitalIndialogo.png" alt="digital india logo"></a>
+    </div>
 
-</div>
-</footer>  
+    <!-- footer -->
+    <div class="footer container-fluid ">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <div class="container-fluid">
+                    <div class="row quick_links">
+                        <div class="col-6"><a href="">Web Policy</a></div>
+                        <div class="col-6"><a href="">Contact Us</a></div>
+                        <div class="col-6"><a href="">Privacy Policy</a></div>
+                        <div class="col-6" data-toggle="modal" data-target="#feedbackModal">
+                            <a href="">Feedback</a> </div>
+                        <div class="col-6"><a href="">Cancellation Refund Policy</a></div>
+                        <div class="col-6"> <a href="">Copyright Policy</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <img class="img-fluid nic_logo d-block mx-auto" src="/images/nic-logo_200X60.png" alt="nic logo">
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="content">
+                    Contents on this website is owned, updated and managed by the <a class="foot_link"
+                        href="https://www.panchayat.gov.in/">Ministry of Panchayati Raj (MoPR)</a> ,
+                    Government of India. Site is technically designed, hosted and maintained by <a class="foot_link"
+                        href="https://www.nic.in/">National Informatics
+                        Centre (NIC)</a> Powered By —
+                    <span class="green_text"> SERVICEPLUS </span>
+                </div>
+            </div>
+            <div class="col-12 last_update">Last reviewed and updated on feb, 2020</div>
+        </div>
+    </div>
 </body>
 
 </html>
