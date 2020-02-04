@@ -91,13 +91,13 @@
         </button>
 
         <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
+            <ol class="navbar-nav ml-auto">
                 <li class="nav-item active ">
                     <!-- <button type="button" class="btn btn-primary button1 "><i class="fas fa-sign-in-alt"></i> Login
                     </button> -->
-                    <div class="container">
+                    <div class="container p-0 m-0">
   <button type="button" class="btn btn-primary button1" data-toggle="modal" data-target="#loginModal">
-    <i class="fas fa-sign-in-alt"></i>Login</button>  
+    <i class="fas fa-sign-in-alt pr-1"></i>Login</button>  
 </div>
 
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -120,12 +120,16 @@
             <div class="form-group">
               <input type="password" class="form-control" id="password1" placeholder="Your password...">
             </div>
+           <div class="form-group"><img src="captcha.PNG" style="width: 100px; height: 50px;" id="captcha"/>
+            <input type="text" name="captcha" placeholder="Enter code" required=""/>
+            <input type="submit" value="Submit" /></div> 
+			
             <button type="button" class="btn btn-info btn-block btn-round">Login</button>
           </form>
           
-          <div class="text-center text-muted delimiter">or use a social network</div>
-          <div class="d-flex justify-content-center social-buttons">
-            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+          <!-- <div class="text-center text-muted delimiter">or use a social network</div> -->
+          <!-- <div class="d-flex justify-content-center social-buttons"> -->
+            <!-- <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
               <i class="fab fa-twitter"></i>
             </button>
             <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
@@ -133,31 +137,68 @@
             </button>
             <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
               <i class="fab fa-linkedin"></i>
-            </button>
-          </di>
+            </button> -->
+        
         </div>
       </div>
     </div>
-      <div class="modal-footer d-flex justify-content-center">
+      <!-- <div class="modal-footer d-flex justify-content-center">
         <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
-      </div>
+      </div> -->
   </div>
 </div>
 
-                </li>
+    </li>
+    <!-------------------------Help modal--------------------------->
                 <li class="nav-item">
-                    <button type="button" class="btn btn-primary button2 "><i class="fas fa-question-circle"></i>
-                        Help</button>
+                    <!-- <button type="button" class="btn btn-primary button2 "><i class="fas fa-question-circle"></i>
+                        Help</button> -->
+                        <button type="button" class="btn btn-primary button2" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fas fa-question-circle pr-1"></i>Help</button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog my_help" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ol class="text-left"><h5 class="text-center">Screen is divided into three components:</h5> 
+                                      <li><strong>Left Panel:</strong>  States selection menu</li>
+                                      <li><strong>Summary Panel:</strong> Key ServicePlus statistics</li>
+                                      <li><strong>Right Panel:</strong> India map, representing the service score for all states</li>  
+                                     </ol>
+                                     <p class="pt-2">The summary panel displays the key statistics for ServicePlus application  till date data. For example, data from 14 states, 151 services, 20 departments is available on ServicePlus BI application. The number of applications received and the number of applications processed on the ServicePlus application till date is also shown here.
+                                        Red-yellow-green indicators help the customer to analyze a state performance from the various aspects.
+                                        </p>
+                                     <p>The report State Department Service Report right below the Summary Panel, provides a tabular list of the State Department Service wise Average Service Score. The average service score for a state is derived by rating a service on multiple Key Performance Indicators (KPIs). The average service score for a state is derived by taking the average score for all services in the state.</p>
+                                     <p>The India map displays the state wise service performance score. The colours of the states denote the relative performance of a state with respect to the average score of all states. On mouse-over, the Service Performance Score for the selected state is shown.
+                                    </p>
+                                   
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                 </li>
+                <!------------------KPI modal------------------------>
                 <li class="nav-item">
                     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary button3" data-toggle="modal" data-target="#exampleModalCenter">
-    <i class="fas fa-tachometer-alt"></i>KPI
+    <i class="fas fa-tachometer-alt pr-1"></i>KPI
   </button>
+  <!--large model-->
+ 
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog my_kpi modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title " id="exampleModalLongTitle">KPI(Key Performance Indicator)</h4>
@@ -165,7 +206,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body ">
         <p class="">
             KPI is a measurable value that demonstrates how effectively an organization is achieving key business objectives.
              Organizations use KPIs at multiple levels to evaluate their success at reaching targets.
@@ -315,6 +356,40 @@
                         </div>
                         <div class="col-md-12 detail">
                             <!-- detail of state level -->
+                            <div class="container state_detail">
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center ">Odisha</h5>
+                                    
+                                    <li><i class="fas fa-cog"></i>Department<span class="badge badge-secondary float-right mr-3 mt-2">2</span></li>
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge badge-secondary float-right mr-3 mt-2">2</span></li>
+                                </ul>
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">Himachal Pradesh</h5>
+                                    <li><i class="fas fa-cog"></i>Department<span
+                                        class="badge badge-secondary float-right mr-3 mt-2">1</span></li>
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge  badge-secondary float-right mr-3 mt-2">1</span></li>
+                                </ul>
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">Kerala</h5>
+                                    <li><i class="fas fa-cog"></i>Department<span
+                                        class="badge  badge-secondary float-right mr-3 mt-2">2</span></li>
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge  badge-secondary float-right mr-3 mt-2">2</span></li>
+                                </ul>
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">Assam</h5>
+                                    <li><i class="fas fa-cog"></i>Department<span
+                                        class="badge  badge-secondary float-right mr-3 mt-2">1</span></li>
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge badge-secondary float-right mr-3 mt-2">1</span></li>
+                                </ul>
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">Chandigarh</h5>
+                                    <li><i class="fas fa-cog"></i>Department<span
+                                        class="badge  badge-secondary float-right mr-3 mt-2">1</span></li>
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge badge-secondary float-right mr-3 mt-2">1</span></li>
+                                </ul>
+
+
+                            </div>
 
                         </div>
                     </div>
@@ -340,6 +415,37 @@
                         </div>
                         <div class="col-md-12 detail">
                             <!--detail-->
+                            <div class="container central_detail">
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">Ministry of Electronics and Information Technology</h5>
+                                    
+                                    
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge badge-secondary float-right mr-3 mt-2">2</span></li>
+                                </ul>
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">National Informatics Centre</h5>
+                                    
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge  badge-secondary float-right mr-3 mt-2">1</span></li>
+                                </ul>
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">Department of Justice</h5>
+                                   
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge  badge-secondary float-right mr-3 mt-2">2</span></li>
+                                </ul>
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">Department of Women and Child Development</h5>
+
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge badge-secondary float-right mr-3 mt-2">1</span></li>
+                                </ul>
+                                <ul style="list-style-type: none;" class="pt-4"><h5 class="text-center">Department of legal Affairs</h5>
+
+                                    <li><i class="fas fa-university"></i>Services<span
+                                        class="badge badge-secondary float-right mr-3 mt-2">1</span></li>
+                                </ul>
+
+
+                            </div>
+
 
                         </div>
                     </div>
