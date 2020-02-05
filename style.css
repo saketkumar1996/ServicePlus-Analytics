@@ -33,11 +33,13 @@
 
 .card1,.card2,.card3{
 background-color: #e9b000;
-height: 200px;
+height: 210px;
+max-width: 80%;
 border-radius: 7px;
 text-align: left;
 margin-top: 5px;
 margin-bottom: 5px;
+margin-left: 40px;
 }
 
 .emblem{
@@ -189,9 +191,11 @@ padding: 3px;
     color: #ffffff;
     border: #cfcfcf;
     background: #506CCB;
-    height: 700px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    height: 600px;
+    max-width: 87%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
     border-radius: 7px;
   }
   .central_detail{
@@ -199,10 +203,11 @@ padding: 3px;
     color: #ffffff;
     border: #cfcfcf;
     background: #0984E3;
-    height: 700px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    height: 600px;
+    margin-top: 80px;
+    max-width: 87%;
+    margin-bottom: 80px;
     border-radius: 7px;
   }
-  }
+  
  
