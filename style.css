@@ -173,11 +173,11 @@ padding: 3px;
     padding: 0.3rem 0rem;
   } 
   /* buttons */
-  .button1,.button2,.button3{
-    margin-left:5px;
-    margin-right:5px;
-    background-color: #413C69;
-    border: none;
+.button1,.button2,.button3{
+  margin-left:5px;
+  margin-right:5px;
+  background-color: #413C69;
+  border: none;
    
     }
    /* KPI modal */
@@ -188,26 +188,39 @@ padding: 3px;
     max-width: 80%;
   }
   .state_detail{
-    color: #ffffff;
-    border: #cfcfcf;
-    background: #506CCB;
-    height: 600px;
-    max-width: 87%;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    
-    border-radius: 7px;
+  color: #ffffff;
+  background:#506CCB;
+  height: 595px;
+  max-width: 87%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 7px;
   }
-  .central_detail{
+.central_detail{
 
-    color: #ffffff;
-    border: #cfcfcf;
-    background: #0984E3;
-    height: 600px;
-    margin-top: 80px;
-    max-width: 87%;
-    margin-bottom: 80px;
-    border-radius: 7px;
-  }
-  
- 
+  color: #ffffff;
+  background: #0984E3;
+  height: 590px;
+  margin-top: 80px;
+  max-width: 87%;
+  margin-bottom: 80px;
+  border-radius: 7px;
+}
+.line_state,.line_central{
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 2%;
+}
+.line_central{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.view_more{
+  margin-left: 25%;
+  margin-top: 20px;
+
+}
+.view_more_state{
+margin-left: 200px;
+}
