@@ -21,7 +21,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
- 
+
     <link rel="stylesheet" href="style.css">
     <script src="scripts/index.js"></script>
 </head>
@@ -29,7 +29,7 @@
 <body>
     <!-- mobile menu -->
     <div class="mobile_menu d-lg-none">
-        
+
         <ul>
             <li>
                 <div class="mobile_menu_close text-right mr-2">
@@ -37,26 +37,29 @@
                 </div>
             </li>
             <li class="nav-item active ">
-                <button type="button" class="btn btn-primary  btn-block button1 btn_style"><i class="fas fa-sign-in-alt"></i> Login
+                <button type="button" class="btn btn-primary  btn-block button1 btn_style"><i
+                        class="fas fa-sign-in-alt"></i> Login
                 </button>
             </li>
             <li class="nav-item">
-                <button type="button" class="btn btn-primary btn-block button2 btn_style" ><i class="fas fa-question-circle"></i>
+                <button type="button" class="btn btn-primary btn-block button2 btn_style"><i
+                        class="fas fa-question-circle"></i>
                     Help</button>
             </li>
             <li class="nav-item">
-                <button type="button" class="btn btn-primary btn-block button3 btn_style"><i class="fas fa-tachometer-alt"></i>
+                <button type="button" class="btn btn-primary btn-block button3 btn_style"><i
+                        class="fas fa-tachometer-alt"></i>
                     KPI</button>
             </li>
         </ul>
     </div>
     <script>
-            $('.mobile_menu').hide();
+        $('.mobile_menu').hide();
     </script>
 
     <!--top header-->
     <div class="container-fluid top-header">
-        <div class="row">
+        <div class="row p-1">
             <div class="col-3">
                 <i class="fab fa-linkedin mt-1 pd-2"></i>
                 <i class="fab fa-twitter mt-1 pd-2"></i>
@@ -96,40 +99,47 @@
                     <!-- <button type="button" class="btn btn-primary button1 "><i class="fas fa-sign-in-alt"></i> Login
                     </button> -->
                     <div class="container p-0 m-0">
-  <button type="button" class="btn btn-primary button1" data-toggle="modal" data-target="#loginModal">
-    <i class="fas fa-sign-in-alt pr-1"></i>Login</button>  
-</div>
+                        <button type="button" class="btn btn-primary button1" data-toggle="modal"
+                            data-target="#loginModal">
+                            <i class="fas fa-sign-in-alt pr-1"></i>Login</button>
+                    </div>
 
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header border-bottom-0">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-title text-center">
-          <h4>Login</h4>
-        </div>
-        <div class="d-flex flex-column text-center">
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control" id="email1"placeholder=" Your email">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" id="password1" placeholder="Your password">
-            </div>
-           <div class="form-group"><img src="captcha.PNG" style="width: 60px; height: 40px;" id="captcha"/>
-            <input type="text" name="captcha" placeholder="Enter code" required=""/>
-            <input type="submit" value="Submit" /></div> 
-			
-            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
-          </form>
-          
-          <!-- <div class="text-center text-muted delimiter">or use a social network</div> -->
-          <!-- <div class="d-flex justify-content-center social-buttons"> -->
-            <!-- <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header border-bottom-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-title text-center">
+                                        <h4>Login</h4>
+                                    </div>
+                                    <div class="d-flex flex-column text-center">
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email1"
+                                                    placeholder=" Your email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="password1"
+                                                    placeholder="Your password">
+                                            </div>
+                                            <div class="form-group"><img src="captcha.PNG"
+                                                    style="width: 60px; height: 40px;" id="captcha" />
+                                                <input type="text" name="captcha" placeholder="Enter code"
+                                                    required="" />
+                                                <input type="submit" value="Submit" /></div>
+
+                                            <button type="button"
+                                                class="btn btn-info btn-block btn-round">Login</button>
+                                        </form>
+
+                                        <!-- <div class="text-center text-muted delimiter">or use a social network</div> -->
+                                        <!-- <div class="d-flex justify-content-center social-buttons"> -->
+                                        <!-- <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
               <i class="fab fa-twitter"></i>
             </button>
             <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
@@ -138,142 +148,165 @@
             <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
               <i class="fab fa-linkedin"></i>
             </button> -->
-        
-        </div>
-      </div>
-    </div>
-      <!-- <div class="modal-footer d-flex justify-content-center">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="modal-footer d-flex justify-content-center">
         <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
       </div> -->
-  </div>
-</div>
+                        </div>
+                    </div>
 
-    </li>
-    <!-------------------------Help modal--------------------------->
+                </li>
+                <!-------------------------Help modal--------------------------->
                 <li class="nav-item">
                     <!-- <button type="button" class="btn btn-primary button2 "><i class="fas fa-question-circle"></i>
                         Help</button> -->
-                        <button type="button" class="btn btn-primary button2" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fas fa-question-circle pr-1"></i>Help</button>
-                          
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog my_help" role="document">
-                              <div class="modal-content">
+                    <button type="button" class="btn btn-primary button2" data-toggle="modal"
+                        data-target="#exampleModal">
+                        <i class="fas fa-question-circle pr-1"></i>Help</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog my_help" role="document">
+                            <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Help</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
+                                    <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
                                 <div class="modal-body">
-                                    <ol class="text-left"><h5 class="text-center">Screen is divided into three components:</h5> 
-                                      <li><strong>Left Panel:</strong>  States selection menu</li>
-                                      <li><strong>Summary Panel:</strong> Key ServicePlus statistics</li>
-                                      <li><strong>Right Panel:</strong> India map, representing the service score for all states</li>  
-                                     </ol>
-                                     <p class="pt-2">The summary panel displays the key statistics for ServicePlus application  till date data. For example, data from 14 states, 151 services, 20 departments is available on ServicePlus BI application. The number of applications received and the number of applications processed on the ServicePlus application till date is also shown here.
-                                        Red-yellow-green indicators help the customer to analyze a state performance from the various aspects.
-                                        </p>
-                                     <p>The report State Department Service Report right below the Summary Panel, provides a tabular list of the State Department Service wise Average Service Score. The average service score for a state is derived by rating a service on multiple Key Performance Indicators (KPIs). The average service score for a state is derived by taking the average score for all services in the state.</p>
-                                     <p>The India map displays the state wise service performance score. The colours of the states denote the relative performance of a state with respect to the average score of all states. On mouse-over, the Service Performance Score for the selected state is shown.
+                                    <ol class="text-left">
+                                        <h5 class="text-center">Screen is divided into three components:</h5>
+                                        <li><strong>Left Panel:</strong> States selection menu</li>
+                                        <li><strong>Summary Panel:</strong> Key ServicePlus statistics</li>
+                                        <li><strong>Right Panel:</strong> India map, representing the service score for
+                                            all states</li>
+                                    </ol>
+                                    <p class="pt-2">The summary panel displays the key statistics for ServicePlus
+                                        application till date data. For example, data from 14 states, 151 services, 20
+                                        departments is available on ServicePlus BI application. The number of
+                                        applications received and the number of applications processed on the
+                                        ServicePlus application till date is also shown here.
+                                        Red-yellow-green indicators help the customer to analyze a state performance
+                                        from the various aspects.
                                     </p>
-                                   
+                                    <p>The report State Department Service Report right below the Summary Panel,
+                                        provides a tabular list of the State Department Service wise Average Service
+                                        Score. The average service score for a state is derived by rating a service on
+                                        multiple Key Performance Indicators (KPIs). The average service score for a
+                                        state is derived by taking the average score for all services in the state.</p>
+                                    <p>The India map displays the state wise service performance score. The colours of
+                                        the states denote the relative performance of a state with respect to the
+                                        average score of all states. On mouse-over, the Service Performance Score for
+                                        the selected state is shown.
+                                    </p>
+
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
-                              </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
                 </li>
                 <!------------------KPI modal------------------------>
                 <li class="nav-item">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary button3" data-toggle="modal" data-target="#exampleModalCenter">
-    <i class="fas fa-tachometer-alt pr-1"></i>KPI
-  </button>
-  <!--large model-->
- 
-  
-  <!-- Modal -->
-  <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog my_kpi modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title " id="exampleModalLongTitle">KPI(Key Performance Indicator)</h4>
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body ">
-        <p class="">
-            KPI is a measurable value that demonstrates how effectively an organization is achieving key business objectives.
-             Organizations use KPIs at multiple levels to evaluate their success at reaching targets.
-        </p>
-        <p>
-            KPI are measured at service level. All the KPIs are independent and can be applied to all the services/departments and states to evaluate the success of an organization or of a particular activity in which it engages.
+                    <button type="button" class="btn btn-primary button3" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <i class="fas fa-tachometer-alt pr-1"></i>KPI
+                    </button>
+                    <!--large model-->
 
-        </p>
-        <ol class="font-weight-bold ">
-            <li>No of submissions channels supported for a service</li>
-            <li >Percentage of applications which are not 
-                processed(No action taken)  </li >
-            <li>Average number of times supplementary documents 
-                requested
-             </li>
-            <li>Percentage of applications Processed Within SLA</li>
-            <li>Percentage of applications Processed Beyond SLA</li>
-            <li>Percentage of applications delivered in 1-7 days  
-                post SLA
-            </li>
-            <li>Percentage of applications delivered in 8-14 days 
-                post SLA
-            </li>
-            <li>Percentage of applications delivered in 15-30 days  
-                post SLA
-            </li>
-            <li>Percentage of applications delivered in 30 days post 
-                SLA
-           </li>
-            <li>Percentage of applications delivered in greater      
-                than 31 days post SLA
-          </li>
-            <li>Average processing time vs SLA defined</li>
-            <li>Percentage of applications put on hold</li>
-            <li>Average hold time for processed applications</li>
-            <li> Percentage of total applications called back
-            </li>
-            <li>Average no. of times application called back</li>
-            <li>Percentage of total applications called back after 
-                delivery</li>
-            <li>Percentage of total applications called back 
-                before delivery</li>
-            <li>Percentage of applications Rejected</li>
-            <li>Percentage of applications revived after rejection</li>
-            <li>Average time for submission of application in the 
-                system - data entry operators</li>
-            <li>Average time for submission of application in the 
-                system - kiosk
-          </li>
-            <li>Applications received online</li>
-            <li>Payment received online</li>
-            <li>Percentage of applications with digital signature 
-                used for output certificate
-          </li>
-            <li>Application processed per employee per day</li>
-        </ol>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog my_kpi modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title " id="exampleModalLongTitle">KPI(Key Performance Indicator)
+                                    </h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">
+                                    <p class="">
+                                        KPI is a measurable value that demonstrates how effectively an organization is
+                                        achieving key business objectives.
+                                        Organizations use KPIs at multiple levels to evaluate their success at reaching
+                                        targets.
+                                    </p>
+                                    <p>
+                                        KPI are measured at service level. All the KPIs are independent and can be
+                                        applied to all the services/departments and states to evaluate the success of an
+                                        organization or of a particular activity in which it engages.
+
+                                    </p>
+                                    <ol class="font-weight-bold ">
+                                        <li>No of submissions channels supported for a service</li>
+                                        <li>Percentage of applications which are not
+                                            processed(No action taken) </li>
+                                        <li>Average number of times supplementary documents
+                                            requested
+                                        </li>
+                                        <li>Percentage of applications Processed Within SLA</li>
+                                        <li>Percentage of applications Processed Beyond SLA</li>
+                                        <li>Percentage of applications delivered in 1-7 days
+                                            post SLA
+                                        </li>
+                                        <li>Percentage of applications delivered in 8-14 days
+                                            post SLA
+                                        </li>
+                                        <li>Percentage of applications delivered in 15-30 days
+                                            post SLA
+                                        </li>
+                                        <li>Percentage of applications delivered in 30 days post
+                                            SLA
+                                        </li>
+                                        <li>Percentage of applications delivered in greater
+                                            than 31 days post SLA
+                                        </li>
+                                        <li>Average processing time vs SLA defined</li>
+                                        <li>Percentage of applications put on hold</li>
+                                        <li>Average hold time for processed applications</li>
+                                        <li> Percentage of total applications called back
+                                        </li>
+                                        <li>Average no. of times application called back</li>
+                                        <li>Percentage of total applications called back after
+                                            delivery</li>
+                                        <li>Percentage of total applications called back
+                                            before delivery</li>
+                                        <li>Percentage of applications Rejected</li>
+                                        <li>Percentage of applications revived after rejection</li>
+                                        <li>Average time for submission of application in the
+                                            system - data entry operators</li>
+                                        <li>Average time for submission of application in the
+                                            system - kiosk
+                                        </li>
+                                        <li>Applications received online</li>
+                                        <li>Payment received online</li>
+                                        <li>Percentage of applications with digital signature
+                                            used for output certificate
+                                        </li>
+                                        <li>Application processed per employee per day</li>
+                                    </ol>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- <button type="button" class="btn btn-primary button3"><i class="fas fa-tachometer-alt"></i>
                         KPI</button> -->
                 </li>
-            </ul>
+                </ul>
         </div>
         <div class="emblem_div d-none d-lg-block">
             <img class="img-fluid emblem " src="emblem.png" alt="emblem">
@@ -304,11 +337,11 @@
         </div>
     </div> -->
     <!--dashboard-->
-    <div class="container-fluid bg_dash p-2">
+    <div class="container-fluid bg_dash p-4">
         <div class="row ">
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row ">
                         <!--District level Summary-->
                         <div class="col-md-12 card1 p-2 ">
                             <h5 class="text-center">District Level Summary</h5>
@@ -328,23 +361,24 @@
                                         class="badge badge-pill badge-secondary float-right mr-3 mt-2">11188075</span>
                                 </li>
                             </ul>
+                            <i class="fa fa-caret-down"></i>
                         </div>
-                        <i class="fa fa-caret-down" style="font-size:60px;color:#e9b000"></i>
+
                         <div class="col-md-12">
                             <!--India Map-->
                             <!--India Map India Map-->
-                            <div class="container map_of_India">
+                            <div class="container map_of_India p-0">
                                 <img src="MAP.PNG" class="map" alt="map of India">
                                 <img src="meter.PNG" class="meter" alt="KPI meter">
                             </div>
-                           
-                            
-                        
+
+
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 card2 p-2">
@@ -360,46 +394,58 @@
                                 <li><i class="fas fa-share-square"></i>App Delivered<span
                                         class="badge badge-pill badge-secondary float-right mr-3 mt-2">7140</span></li>
                             </ul>
+                            <i class="fa fa-caret-down"></i>
                         </div>
-                        <i class="fa fa-caret-down" style="font-size:60px;color:#e9b000"></i>
-                        <div class="col-md-12 detail">
+
+                        <div class="col-md-12 detail p-0">
                             <!-- detail of state level -->
                             <div class="container state_detail">
-                                <ul style="list-style-type: none;color: white;" class="pt-2 mr-4"><h6 class="text-center ">Odisha</h6>
-                                    
-                                    <li ><i class="fas fa-cog"></i>Department<span class="badge badge-info float-right mr-3 mt-2">2</span></li>
-                                    <li ><i class="fas fa-university"></i>Services<span
-                                        class="badge badge-info float-right mr-3 mt-2">2</span></li>
+                                <ul style="list-style-type: none;color: white;padding-inline-start: 0;"
+                                    class="pt-2 mx-auto">
+                                    <h6 class="text-center ">Odisha</h6>
+
+                                    <li><i class="fas fa-cog"></i>Department<span
+                                            class="badge badge-info float-right mr-3 mt-2">2</span></li>
+                                    <li><i class="fas fa-university"></i>Services<span
+                                            class="badge badge-info float-right mr-3 mt-2">2</span></li>
                                 </ul>
                                 <div class="line line_state"></div>
-                                <ul style="list-style-type: none;" class="mr-4"><h6 class="text-center">Himachal Pradesh</h6>
+                                <ul style="list-style-type: none;padding-inline-start: 0;" class="mx-auto">
+                                    <h6 class="text-center">Himachal Pradesh</h6>
                                     <li><i class="fas fa-cog"></i>Department<span
-                                        class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                            class="badge badge-info float-right mr-3 mt-2">1</span></li>
                                     <li><i class="fas fa-university"></i>Services<span
-                                        class="badge  badge-info float-right mr-3 mt-2">1</span></li>
+                                            class="badge  badge-info float-right mr-3 mt-2">1</span></li>
                                 </ul>
                                 <div class="line line_state"></div>
-                                <ul style="list-style-type: none;" class="mr-4"><h6 class="text-center">Kerala</h6>
+                                <ul style="list-style-type: none;" class="mx-auto">
+                                    <h6 class="text-center">Kerala</h6>
                                     <li><i class="fas fa-cog"></i>Department<span
-                                        class="badge badge-info float-right mr-3 mt-2">2</span></li>
+                                            class="badge badge-info float-right mr-3 mt-2">2</span></li>
                                     <li><i class="fas fa-university"></i>Services<span
-                                        class="badge badge-info float-right mr-3 mt-2">2</span></li>
+                                            class="badge badge-info float-right mr-3 mt-2">2</span></li>
                                 </ul>
                                 <div class="line line_state"></div>
-                                <ul style="list-style-type: none;" class="mr-4"><h6 class="text-center">Assam</h6>
+                                <ul style="list-style-type: none;padding-inline-start: 0;" class="mx-auto">
+                                    <h6 class="text-center">Assam</h6>
                                     <li><i class="fas fa-cog"></i>Department<span
-                                        class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                            class="badge badge-info float-right mr-3 mt-2">1</span></li>
                                     <li><i class="fas fa-university"></i>Services<span
-                                        class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                            class="badge badge-info float-right mr-3 mt-2">1</span></li>
                                 </ul>
                                 <div class="line line_state"></div>
-                                <ul style="list-style-type: none;" class="mr-4 mb-0"><h6 class="text-center">Chandigarh</h6>
+                                <ul style="list-style-type: none;padding-inline-start: 0;" class="mx-auto mb-0">
+                                    <h6 class="text-center">Chandigarh</h6>
                                     <li><i class="fas fa-cog"></i>Department<span
-                                        class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                            class="badge badge-info float-right mr-3 mt-2">1</span></li>
                                     <li><i class="fas fa-university"></i>Services<span
-                                        class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                            class="badge badge-info float-right mr-3 mt-2">1</span></li>
                                 </ul>
-                                <a class="cursor_pointer"><h6 style="text-align: right;" class="">View More <i class="fas fa-arrow-circle-right"></i></h6></a>
+                                <a class="cursor_pointer">
+                                    <h6 style="text-align: right;" class="mb-0">View More <i
+                                            class="fas fa-arrow-circle-right"></i>
+                                    </h6>
+                                </a>
 
 
                             </div>
@@ -408,7 +454,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <!--central-->
                 <div class="container-fluid">
                     <div class="row">
@@ -425,45 +471,54 @@
                                 <li><i class="fas fa-share-square"></i>App Delivered<span
                                         class="badge badge-pill badge-secondary float-right mr-3 mt-2">3815</span></li>
                             </ul>
+                            <!-----------------------------caret------------------------------->
+                            <i class="fa fa-caret-down"></i>
                         </div>
-                        <!-----------------------------caret------------------------------->
-                        <i class="fa fa-caret-down" style="font-size:60px;color:#e9b000"></i>
-                        <div class="col-md-12 detail">
+                        <div class="col-md-12 detail p-0">
                             <!--detail-->
                             <div class="container central_detail">
-                                <ul style="list-style-type: none;" class="pt-2 mr-4"><h6 class="text-center">Ministry of Electronics and Information Technology</h6>
-                              <li><i class="fas fa-university"></i>Services<span
-                                        class="badge badge-info float-right mr-3 mt-2">2</span></li>
+                                <ul style="list-style-type: none;padding-inline-start: 0;" class="pt-2 mx-auto">
+                                    <h6 class="text-center">Ministry of Electronics and Information Technology</h6>
+                                    <li><i class="fas fa-university"></i>Services<span
+                                            class="badge badge-info float-right mr-3 mt-2">2</span></li>
                                 </ul>
                                 <div class="line line_central"></div>
-                                <ul style="list-style-type: none;" class="pb-3 mr-4"><h6 class="text-center">National Informatics Centre</h6>
-                                    
-                                    <li><i class="fas fa-university"></i>Services<span
-                                        class="badge badge-info float-right mr-3 mt-2">1</span></li>
-                                </ul>
-                                <div class="line line_state"></div>
-                                <ul style="list-style-type: none;" class="pb-3 mr-4"><h6 class="text-center">Department of Justice</h6>
-                                   
-                                    <li><i class="fas fa-university"></i>Services<span
-                                        class="badge  badge-info float-right mr-3 mt-2">2</span></li>
-                                </ul>
-                                <div class="line line_state"></div>
-                                <ul style="list-style-type: none;" class="pb-3 mr-4"><h6 class="text-center">Department of Women and Child Development</h6>
+                                <ul style="list-style-type: none;padding-inline-start: 0;" class="pb-3 mx-auto">
+                                    <h6 class="text-center">National Informatics Centre</h6>
 
                                     <li><i class="fas fa-university"></i>Services<span
-                                        class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                            class="badge badge-info float-right mr-3 mt-2">1</span></li>
                                 </ul>
                                 <div class="line line_state"></div>
-                                <ul style="list-style-type: none;" class="pb-3 mr-4"><h6 class="text-center">Department of legal Affairs</h6>
+                                <ul style="list-style-type: none;padding-inline-start: 0;" class="pb-3 mx-auto">
+                                    <h6 class="text-center">Department of Justice</h6>
 
                                     <li><i class="fas fa-university"></i>Services<span
-                                        class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                            class="badge  badge-info float-right mr-3 mt-2">2</span></li>
                                 </ul>
-                                <a class="cursor_pointer"><h6 style="text-align: right;" class=" pt-0">View More <i class="fas fa-arrow-circle-right"></i></h6></a>
+                                <div class="line line_state"></div>
+                                <ul style="list-style-type: none;padding-inline-start: 0;" class="pb-3 mx-auto">
+                                    <h6 class="text-center">Department of Women and Child Development</h6>
+
+                                    <li><i class="fas fa-university"></i>Services<span
+                                            class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                </ul>
+                                <div class="line line_state"></div>
+                                <ul style="list-style-type: none;padding-inline-start: 0;" class="pb-3 mx-auto">
+                                    <h6 class="text-center">Department of legal Affairs</h6>
+
+                                    <li><i class="fas fa-university"></i>Services<span
+                                            class="badge badge-info float-right mr-3 mt-2">1</span></li>
+                                </ul>
+                                <a class="cursor_pointer">
+                                    <h6 style="text-align: right;" class="mb-0">View More <i
+                                            class="fas fa-arrow-circle-right"></i>
+                                    </h6>
+                                </a>
 
 
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -511,7 +566,7 @@
                     Government of India. Site is technically designed, hosted and maintained by <a class="foot_link"
                         href="https://www.nic.in/">National Informatics
                         Centre (NIC)</a> Powered By —
-                   <a href="http://serviceonline.gov.in/"><span class="green_text"> SERVICEPLUS </span></a> 
+                    <a href="http://serviceonline.gov.in/"><span class="green_text"> SERVICEPLUS </span></a>
                 </div>
             </div>
             <div class="col-12 last_update">Last reviewed and updated on feb, 2020</div>

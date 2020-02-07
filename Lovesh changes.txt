@@ -1,0 +1,11 @@
+1. .fa-caret-down position changed
+2. .top-header padding
+3. details fixed height removed
+4. changed col-md-4 to col-lg-4
+5. card max-width:90% and margin: 0 auto
+6. map_of_india with p-0
+7. detail set to p-0
+8. central and state details max-width: 90%
+9. .bg_dash p-4
+10. view more mb-0
+11. central details ul set to mx-auto
