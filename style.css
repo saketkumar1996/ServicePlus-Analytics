@@ -26,6 +26,8 @@
 .btn_style {
   margin-top: 5px;
   width: 100%;
+  background-color: #413C69;
+  border: none;
 }
 
 .cursor_pointer {
@@ -37,11 +39,12 @@
 .card2,
 .card3 {
   background-color: #e9b000;
-  /* height: 210px; */
+  height: 210px;
   max-width: 90%;
   border-radius: 7px;
   text-align: left;
   margin-top: 5px;
+  margin-left: 0px;
 
   margin: 0 auto;
 }
@@ -51,6 +54,7 @@
 
 
   height: 60px;
+  margin-left: 20px;
 }
 
 .bg_dash {
@@ -97,7 +101,6 @@
 .footer {
   background-color: #413C69;
   color: white;
-  padding: 10px;
 }
 
 .footer .foot_link {
@@ -217,7 +220,7 @@
   /* height: 590px; */
   max-width: 90%;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   border-radius: 7px;
 }
 
@@ -232,20 +235,25 @@
   border-radius: 7px;
 }
 
-.line_state,
+.line_state {
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  /* margin-bottom: 2%;
+  margin-top: 20px; */margin-bottom: 1%;
+}
+
 .line_central {
   height: 2px;
   width: 100%;
   background-color: #ffffff;
-  margin-bottom: 2%;
-}
-
-.line_central {
+  margin-bottom: 5%;
   margin-bottom: 10%;
   margin-top: 10%;
+  padding-bottom: 5%;
 }
 
-.view_more {
+.view_more_central {
   margin-left: 25%;
   margin-top: 20px;
 
@@ -277,9 +285,28 @@
 
 .fa-caret-down {
   position: absolute;
-  bottom: -27px;
-  left: 0px;
+  bottom: -25px;
+  left: 20px;
   font-size: 50px;
 
   color: #e9b000;
+}
+input.form-control.captchatxt {
+  width: 60%;
+  margin: 10px auto;
+}
+.badge-info{
+  background-color: ivory;
+  color: #0984E3;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  padding-top: 4px;
+  /* text-decoration: inherit; */
+  
+}
+.button3,.button2{
+  width: 83px;
+  height: 36px;
 }
