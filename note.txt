@@ -1,1 +1,82 @@
  resource=https://codepen.io/cristinaconacel/pen/VVdgjp
+                     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header border-bottom-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-title text-center">
+                                        <h4>Login</h4>
+                                    </div>
+                                    <div class="d-flex flex-column text-center">
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email1"
+                                                    placeholder=" Your email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="password1"
+                                                    placeholder="Your password">
+                                            </div>
+                                            <div class="form-group"><img src="captcha.PNG"
+                                                    style="width: 90px; height: 40px;" id="captcha" />
+                                                <input type="text" name="captcha" placeholder="Enter code"
+                                                    required="" class="form-control captchatxt" />
+                                                <input type="submit" value="Submit" /></div>
+
+                                            <button type="button"
+                                                class="btn btn-info btn-block btn-round" style="background-color: #413C69;">Login</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog my_help" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ol class="text-left">
+                                        <h5 class="text-center">Screen is divided into three components:</h5>
+                                        <li><strong>Left Panel:</strong> States selection menu</li>
+                                        <li><strong>Summary Panel:</strong> Key ServicePlus statistics</li>
+                                        <li><strong>Right Panel:</strong> India map, representing the service score for
+                                            all states</li>
+                                    </ol>
+                                    <p class="pt-2">The summary panel displays the key statistics for ServicePlus
+                                        application till date data. For example, data from 14 states, 151 services, 20
+                                        departments is available on ServicePlus BI application. The number of
+                                        applications received and the number of applications processed on the
+                                        ServicePlus application till date is also shown here.
+                                        Red-yellow-green indicators help the customer to analyze a state performance
+                                        from the various aspects.
+                                    </p>
+                                    <p>The report State Department Service Report right below the Summary Panel,
+                                        provides a tabular list of the State Department Service wise Average Service
+                                        Score. The average service score for a state is derived by rating a service on
+                                        multiple Key Performance Indicators (KPIs). The average service score for a
+                                        state is derived by taking the average score for all services in the state.</p>
+                                    <p>The India map displays the state wise service performance score. The colours of
+                                        the states denote the relative performance of a state with respect to the
+                                        average score of all states. On mouse-over, the Service Performance Score for
+                                        the selected state is shown.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

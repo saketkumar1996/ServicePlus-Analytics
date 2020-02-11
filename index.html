@@ -36,22 +36,20 @@
                     <i class="fas fa-times text-white"></i>
                 </div>
             </li>
-            <li class="nav-item active ">
+            <li class="nav-item active">
                 <button type="button" class="btn btn-primary btn-block btn_style" data-toggle="modal"
-                data-target="#loginModal"><i
-                        class="fas fa-sign-in-alt"></i> Login
+                data-target="#loginModal">
+                <i class="fas fa-sign-in-alt"></i> Login
                 </button>
             </li>
             <li class="nav-item">
-                <button type="button" class="btn btn-primary btn-block  btn_style" data-toggle="modal"
-                data-target="#exampleModal"><i
-                        class="fas fa-question-circle"></i>
+                <button type="button" class="btn btn-primary btn-block  btn_style" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-question-circle"></i>
                     Help</button>
             </li>
             <li class="nav-item">
                 <button type="button" class="btn btn-primary btn-block btn_style" data-toggle="modal"
-                data-target="#exampleModalCenter"><i
-                        class="fas fa-tachometer-alt"></i>
+                data-target="#exampleModalCenter"><i class="fas fa-tachometer-alt"></i>
                     KPI</button>
             </li>
         </ul>
@@ -115,51 +113,7 @@
                         data-target="#exampleModal">
                         <i class="fas fa-question-circle pr-1"></i>Help</button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog my_help" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Help</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <ol class="text-left">
-                                        <h5 class="text-center">Screen is divided into three components:</h5>
-                                        <li><strong>Left Panel:</strong> States selection menu</li>
-                                        <li><strong>Summary Panel:</strong> Key ServicePlus statistics</li>
-                                        <li><strong>Right Panel:</strong> India map, representing the service score for
-                                            all states</li>
-                                    </ol>
-                                    <p class="pt-2">The summary panel displays the key statistics for ServicePlus
-                                        application till date data. For example, data from 14 states, 151 services, 20
-                                        departments is available on ServicePlus BI application. The number of
-                                        applications received and the number of applications processed on the
-                                        ServicePlus application till date is also shown here.
-                                        Red-yellow-green indicators help the customer to analyze a state performance
-                                        from the various aspects.
-                                    </p>
-                                    <p>The report State Department Service Report right below the Summary Panel,
-                                        provides a tabular list of the State Department Service wise Average Service
-                                        Score. The average service score for a state is derived by rating a service on
-                                        multiple Key Performance Indicators (KPIs). The average service score for a
-                                        state is derived by taking the average score for all services in the state.</p>
-                                    <p>The India map displays the state wise service performance score. The colours of
-                                        the states denote the relative performance of a state with respect to the
-                                        average score of all states. On mouse-over, the Service Performance Score for
-                                        the selected state is shown.
-                                    </p>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </li>
                 <!------------------KPI modal------------------------>
                 <li class="nav-item">
@@ -172,85 +126,7 @@
 
 
                     <!-- Modal -->
-                    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog my_kpi modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title " id="exampleModalLongTitle">KPI(Key Performance Indicator)
-                                    </h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body" style="max-height: 350px; overflow-y: auto;">
-                                    <p class="">
-                                        KPI is a measurable value that demonstrates how effectively an organization is
-                                        achieving key business objectives.
-                                        Organizations use KPIs at multiple levels to evaluate their success at reaching
-                                        targets.
-                                    </p>
-                                    <p>
-                                        KPI are measured at service level. All the KPIs are independent and can be
-                                        applied to all the services/departments and states to evaluate the success of an
-                                        organization or of a particular activity in which it engages.
-
-                                    </p>
-                                    <ol class="">
-                                        <li>No of submissions channels supported for a service</li>
-                                        <li>Percentage of applications which are not
-                                            processed(No action taken) </li>
-                                        <li>Average number of times supplementary documents
-                                            requested
-                                        </li>
-                                        <li>Percentage of applications Processed Within SLA</li>
-                                        <li>Percentage of applications Processed Beyond SLA</li>
-                                        <li>Percentage of applications delivered in 1-7 days
-                                            post SLA
-                                        </li>
-                                        <li>Percentage of applications delivered in 8-14 days
-                                            post SLA
-                                        </li>
-                                        <li>Percentage of applications delivered in 15-30 days
-                                            post SLA
-                                        </li>
-                                        <li>Percentage of applications delivered in 30 days post
-                                            SLA
-                                        </li>
-                                        <li>Percentage of applications delivered in greater
-                                            than 31 days post SLA
-                                        </li>
-                                        <li>Average processing time vs SLA defined</li>
-                                        <li>Percentage of applications put on hold</li>
-                                        <li>Average hold time for processed applications</li>
-                                        <li> Percentage of total applications called back
-                                        </li>
-                                        <li>Average no. of times application called back</li>
-                                        <li>Percentage of total applications called back after
-                                            delivery</li>
-                                        <li>Percentage of total applications called back
-                                            before delivery</li>
-                                        <li>Percentage of applications Rejected</li>
-                                        <li>Percentage of applications revived after rejection</li>
-                                        <li>Average time for submission of application in the
-                                            system - data entry operators</li>
-                                        <li>Average time for submission of application in the
-                                            system - kiosk
-                                        </li>
-                                        <li>Applications received online</li>
-                                        <li>Payment received online</li>
-                                        <li>Percentage of applications with digital signature
-                                            used for output certificate
-                                        </li>
-                                        <li>Application processed per employee per day</li>
-                                    </ol>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-- <button type="button" class="btn btn-primary button3"><i class="fas fa-tachometer-alt"></i>
                         KPI</button> -->
                 </li>
@@ -512,8 +388,7 @@
                     Contents on this website is owned, updated and managed by the <a class="foot_link"
                         href="https://www.panchayat.gov.in/">Ministry of Panchayati Raj (MoPR)</a> ,
                     Government of India. Site is technically designed, hosted and maintained by <a class="foot_link"
-                        href="https://www.nic.in/">National Informatics
-                        Centre (NIC)</a> Powered By —
+                        href="https://www.nic.in/">National Informatics Centre (NIC)</a> Powered By —
                     <a href="http://serviceonline.gov.in/"><span class="green_text"> SERVICEPLUS </span></a>
                 </div>
             </div>
@@ -557,7 +432,133 @@
                 </div>
             </div>
         </div>
+        </div></div>
         <!------------------------model----KPI------------------------------->
+        <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog my_kpi modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title " id="exampleModalLongTitle">KPI(Key Performance Indicator)
+                                    </h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="max-height: 350px; overflow-y: auto;">
+                                    <p class="">
+                                        KPI is a measurable value that demonstrates how effectively an organization is
+                                        achieving key business objectives.
+                                        Organizations use KPIs at multiple levels to evaluate their success at reaching
+                                        targets.
+                                    </p>
+                                    <p>
+                                        KPI are measured at service level. All the KPIs are independent and can be
+                                        applied to all the services/departments and states to evaluate the success of an
+                                        organization or of a particular activity in which it engages.
+
+                                    </p>
+                                    <ol class="">
+                                        <li>No of submissions channels supported for a service</li>
+                                        <li>Percentage of applications which are not
+                                            processed(No action taken) </li>
+                                        <li>Average number of times supplementary documents
+                                            requested
+                                        </li>
+                                        <li>Percentage of applications Processed Within SLA</li>
+                                        <li>Percentage of applications Processed Beyond SLA</li>
+                                        <li>Percentage of applications delivered in 1-7 days
+                                            post SLA
+                                        </li>
+                                        <li>Percentage of applications delivered in 8-14 days
+                                            post SLA
+                                        </li>
+                                        <li>Percentage of applications delivered in 15-30 days
+                                            post SLA
+                                        </li>
+                                        <li>Percentage of applications delivered in 30 days post
+                                            SLA
+                                        </li>
+                                        <li>Percentage of applications delivered in greater
+                                            than 31 days post SLA
+                                        </li>
+                                        <li>Average processing time vs SLA defined</li>
+                                        <li>Percentage of applications put on hold</li>
+                                        <li>Average hold time for processed applications</li>
+                                        <li> Percentage of total applications called back
+                                        </li>
+                                        <li>Average no. of times application called back</li>
+                                        <li>Percentage of total applications called back after
+                                            delivery</li>
+                                        <li>Percentage of total applications called back
+                                            before delivery</li>
+                                        <li>Percentage of applications Rejected</li>
+                                        <li>Percentage of applications revived after rejection</li>
+                                        <li>Average time for submission of application in the
+                                            system - data entry operators</li>
+                                        <li>Average time for submission of application in the
+                                            system - kiosk
+                                        </li>
+                                        <li>Applications received online</li>
+                                        <li>Payment received online</li>
+                                        <li>Percentage of applications with digital signature
+                                            used for output certificate
+                                        </li>
+                                        <li>Application processed per employee per day</li>
+                                    </ol>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+        <!--help-->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog my_help" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol class="text-left">
+                        <h5 class="text-center">Screen is divided into three components:</h5>
+                        <li><strong>Left Panel:</strong> States selection menu</li>
+                        <li><strong>Summary Panel:</strong> Key ServicePlus statistics</li>
+                        <li><strong>Right Panel:</strong> India map, representing the service score for
+                            all states</li>
+                    </ol>
+                    <p class="pt-2">The summary panel displays the key statistics for ServicePlus
+                        application till date data. For example, data from 14 states, 151 services, 20
+                        departments is available on ServicePlus BI application. The number of
+                        applications received and the number of applications processed on the
+                        ServicePlus application till date is also shown here.
+                        Red-yellow-green indicators help the customer to analyze a state performance
+                        from the various aspects.
+                    </p>
+                    <p>The report State Department Service Report right below the Summary Panel,
+                        provides a tabular list of the State Department Service wise Average Service
+                        Score. The average service score for a state is derived by rating a service on
+                        multiple Key Performance Indicators (KPIs). The average service score for a
+                        state is derived by taking the average score for all services in the state.</p>
+                    <p>The India map displays the state wise service performance score. The colours of
+                        the states denote the relative performance of a state with respect to the
+                        average score of all states. On mouse-over, the Service Performance Score for
+                        the selected state is shown.
+                    </p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
